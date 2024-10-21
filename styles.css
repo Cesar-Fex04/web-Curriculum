@@ -1,0 +1,440 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: comfortaa;
+}
+
+/* Header de todas las páginas */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ececec;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fcb103;
+    border-radius: 50%;
+}
+
+/* Navegación - Header común a todas las páginas */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #fcb103;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Main - Específico del index.html */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+/* Perfil - Específico del index.html */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 450px;
+    height: 450px; /* Hacer la altura igual al ancho para mantener la imagen circular */
+    border-radius: 50%;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+    transform: scale(1.1); /* Aplica un pequeño zoom */
+    margin-left: 40%;
+}
+
+.profile-text {
+    margin-left: 25%;
+    margin-right: 10%;
+    text-align: justify;
+    
+}
+
+.profile-text h2 {
+    font-size: 40px;
+    text-align: justify;
+}
+
+.about-me {
+    font-size: 17px;
+    margin: 10px 0;
+    line-height: 1.5;
+    font-style: italic;
+}
+.about-me2 {
+    font-size: 17px;
+    margin: 10px 0;
+    line-height: 1.5;
+    
+}
+
+/* Botones - Específicos del index.html */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-cv, .btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: comfortaa;
+}
+
+.btn-cv {
+    background-color: #fcb103;
+}
+
+.btn-contact {
+    background-color: #45c4b0;
+}
+
+/* Footer de todas las páginas */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 2px solid #ececec;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-media a:hover {
+    color: #45c4b0;
+}
+
+/* ============================= */
+/* Sección específica para curriculum.html */
+/* ============================= */
+
+/* Sección Bio */
+.bio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 60px;
+    margin-left: 10%;
+    font-family: comfortaa;
+}
+
+.bio-image img {
+ margin-top: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 450px;
+    height: 450px; /* Hacer la altura igual al ancho para mantener la imagen circular */
+    transform: scale(1.1); /* Aplica un pequeño zoom */
+   
+}
+
+.bio-text {
+    flex: 1;
+    padding-left: 20px;
+    margin-left: 15%;
+    margin-right: 10%;
+    
+    text-align: justify;
+}
+
+.bio-text h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.bio-text .subheading {
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.bio-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: comfortaa;
+}
+
+.btn-cv {
+    background-color: #fcb103;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Sección Educación */
+/* Sección Educación */
+.education {
+    padding: 40px 60px;
+    background-color: #f7f7f7;
+    margin-top: 40px; /* Añadir espacio superior si es necesario */
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Asegura que la imagen y el texto estén alineados desde arriba */
+    text-align: justify;
+    margin-right: 10%;
+}
+
+.education-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y la imagen verticalmente */
+    margin-left: 20%;
+    
+}
+
+.education-left h3 {
+    font-size: 45px;
+    color: #fcb103;
+    margin-bottom: 20px;
+   
+}
+
+.education-icon {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.education-right {
+    flex: 1; /* Toma el resto del espacio disponible */
+    padding-left: 40px; /* Espacio entre la imagen y el contenido educativo */
+    margin-left:20% ;
+
+}
+
+.education-period {
+    margin-bottom: 20px;
+}
+
+.education-period p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.education-period strong {
+    color: #fcb103;
+    font-size: 23px;
+}
+
+.video-container {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Opcional: Establece la altura de la página */
+}
+
+iframe {
+    max-width: auto; /* Asegura que el iframe no exceda el tamaño de la pantalla */
+    height: 80%; /* Ajusta la altura automáticamente */
+    width: 55%;
+}
+
+
+/* General styles (heredados para todas las páginas) */
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fcb103;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #fcb103;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-media a:hover {
+    color: #45c4b0;
+}
+
+/* Estilos para la página de Proyectos */
+.projects-section {
+    padding: 40px 60px;
+    background-color: #f7f7f7;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.project-text {
+    flex: 1;
+    padding-right: 10px;
+    
+}
+
+.project-text h3 {
+    font-size: 24px;
+    color: #fcb103;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+.project-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: comfortaa;
+    text-align: justify;
+    margin-right: 8%;
+    margin-left: 10%;
+
+}
+
+.project-image img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Añade transición */
+    margin-top: 15%;
+    margin-right: 5%;
+}
+
+.project-image img.enlarged {
+    transform: scale(4); /* Ajusta el valor para el tamaño deseado */
+    align-self: center;
+}
+
+.proy-titulo{
+    text-align: center;
+}
+
+/* Estilos para la imagen agrandada */
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transición para el fondo */
+}
+
+.fullscreen-image img {
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 90%; /* Ajusta el tamaño máximo de la imagen */
+    border-radius: 10px;
+}

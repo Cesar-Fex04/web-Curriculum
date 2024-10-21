@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header que se hereda en todas las páginas -->
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <h1>Julio Cesar Lopez Felix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Currículum</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Proyectos -->
+    <h1 class="proy-titulo">Proyectos</h1>
+    
+        
+
+        <!-- Proyecto 1 -->
+        <div class="project">
+            <div class="project-text">
+                <h3>Cartelera</h3>
+                <p>
+
+
+                    Este proyecto fue realizado en el cuarto semestre de la carrera. Consiste en una cartelera
+                    capaz de leer la información de un archivo csv que contenía diferentes datos de películas, tales como
+                    el nombre, su imagen, la categoría, descripcion, etc.
+                    todo esto era posible por medio de diversas librerías utilizadas en python, quien fue el lenguaje
+                    principal utilizado para este programa, de la mano con html y css
+    
+    .
+                    
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="cartelera.png" alt="Proyecto 01">
+            </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project">
+            <div class="project-text">
+                <h3>Revistas</h3>
+                <p>
+                    Este proyecto fue un poco complejo, ya que la idea era que debía tomar 2 archivos de revistas de una paginas web, para posteriormente descargarlos. Al terminar dicha acción el programa debía ser capaz de leer ese archivo y ordenar en una tabla todos los elementos que contenían esas revistas, también incluía un buscador para identificar la revista que se deseara y las ordenaba en orden alfabético.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="revistas.png" alt="Proyecto 02">
+            </div>
+        </div>
+        <br>
+        <!-- Proyecto 3 -->
+        <div class="project">
+            <div class="project-text">
+                <h3>Analisis e inventario de productos</h3>
+                <p>
+                    Es uno de los proyectos mas recientes de los cuales he estado involucrado, consiste en un programa capaz de solicitar un inicio de sesión, puede identificar si eres el administrador o un usuario corroborándolo con el registro en la base de datos. 
+Al momento de ingresar como administrador, aparece la lista de productos disponible, y tienes todo el poder de actualizar cualquier dato o propiedad de algún producto, según lo mostrado en la tabla, puedes agregar un nuevo producto o eliminarlo como más desees.
+
+                
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="productos.png" alt="Proyecto 03">
+            </div>
+        </div>
+
+       <div class="fullscreen-image" id="fullscreenImage" style="display: none;">
+    <img id="enlargedImage" src="" alt="Imagen Agrandada">
+</div>
+
+<script>
+document.querySelectorAll('.project-image img').forEach(image => {
+    image.addEventListener('click', () => {
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const enlargedImage = document.getElementById('enlargedImage');
+
+        // Establecer la imagen agrandada y mostrar el contenedor
+        enlargedImage.src = image.src; // Copiar la fuente de la imagen
+        fullscreenImage.style.display = 'flex'; // Mostrar el contenedor
+        setTimeout(() => {
+            fullscreenImage.style.opacity = '1'; // Hacer visible con transición
+        }, 0);
+    });
+});
+
+// Agregar un evento de clic al contenedor para cerrarlo
+document.getElementById('fullscreenImage').addEventListener('click', () => {
+    const fullscreenImage = document.getElementById('fullscreenImage');
+    fullscreenImage.style.opacity = '0'; // Ocultar con transición
+    setTimeout(() => {
+        fullscreenImage.style.display = 'none'; // Ocultar el contenedor
+    }, 300); // Esperar el tiempo de la transición
+});
+</script>
+
+            
+
+    <!-- Footer que se hereda en todas las páginas -->
+    <footer>
+        <div class="contact-info">
+            <p><strong>Teléfono:</strong> +52 644 420 6449</p>
+            <p><strong>Email:</strong> juliocesarlopezfelix@outlook.es</p>
+        </div>
+        <div class="social-media">
+            <p><strong>Sígueme:</strong></p>
+            <a href="https://github.com/Cesar-Fex04"><i class="fab fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/julio-c%C3%A9sar-l%C3%B3pez-f%C3%A9lix-468234333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
